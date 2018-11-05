@@ -19,7 +19,7 @@ void setup() {
   // Set Wi-Fi hotspot name and password
   // Call this function before robot.Start()
   // The Wi-Fi password is case sensitive and at least 8 characters
-  robot.SetWiFi("HexapotBot", "xanadu1966");
+  robot.SetWiFi("HexapotBot", "password");
   // Start Freenove Hexapod Robot with default function
   robot.Start(true);
 }
