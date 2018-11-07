@@ -31,8 +31,8 @@
  *      VIN   |       5V
  *      GND   |       GND
  *  
- * 
- * Other information
+ * digitalReaddigitalReaddigitalRead
+ * Other information                                       
  * -----------------
  *  For information on the U8g2lib library: https://github.com/olikraus/u8g2  
  *  Setup and reference for the library: https://github.com/olikraus/u8g2/wiki
@@ -77,7 +77,9 @@
 
 U8G2_SH1106_128X64_NONAME_F_4W_HW_SPI u8g2(U8G2_R0, /* cs=*/ 10, /* dc=*/ 9, /* reset=*/ 8);
 
+
 void setup(void) {
+
   u8g2.begin();
 
   u8g2.clearBuffer();          // clear the internal memory
@@ -99,5 +101,4 @@ u8g2.drawStr(5,60,"Dr.Peter Dalmaris?");
   u8g2.sendBuffer();      // transfer internal memory to the display
 }
 
-void loop(void) {
-}
+void loop(void) {}

@@ -119,11 +119,7 @@ void loop() {
 }
 
 void printTime() {
-
-  
-
-      while (1) {
-        
+      while (1) {  
         if (++ss > 59) {
             ss = 0;
             mm++;
@@ -136,8 +132,8 @@ void printTime() {
         char buf[20];
         sprintf(buf, "%02d:%02d:%02d", hh, mm, ss);
         lcd.setCursor(0,1);
-        lcd.print("Time:");
-        lcd.setCursor(8,1);
+        //lcd.print("Time:");
+        lcd.setCursor(4,1);
         lcd.print(buf);
         delay(1000);
     }
@@ -161,6 +157,7 @@ void printTemp() {
 
 
 // This function will generate the 2 menu items that can fit on the screen. They will change as you scroll through your menu. Up and down arrows will indicate your current menu position.
+
 void mainMenuDraw() {
   Serial.print(menuPage);
   lcd.clear();
@@ -260,7 +257,7 @@ void operateMainMenu() {
         }
  
         if (menuPage % 2 != 0 and cursorPosition % 2 != 0) {
-          menuPage = menuPage - 1;
+                   menuPage = menuPage - 1;
           menuPage = constrain(menuPage, 0, maxMenuPages);
         }
  

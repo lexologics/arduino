@@ -73,15 +73,15 @@ void loop()
 
 // Uncoment the following lines to test your servo's ability to hold a position.
 // You can set the position of a servo , and hold it.
-  myservo1.write(0);  //Servo 1 go to position 85
-  myservo2.write(110); //Servo 2 go to position 85
-  delay(500);
-  myservo1.write(80); //Servo 1 go to position 20
-  myservo2.write(10); //Servo 2 go to position 10
-  delay(1000);
-  myservo1.write(180); //Servo 1 go to position 170
-  myservo2.write(160); //Servo 2 go to position 20
-  delay(500);
-  myservo1.write(80);
+//  myservo1.write(0);  //Servo 1 go to position 85
+//  myservo2.write(110); //Servo 2 go to position 85
+//  delay(500);
+//  myservo1.write(80); //Servo 1 go to position 20
+//  myservo2.write(10); //Servo 2 go to position 10
+//  delay(1000);
+//  myservo1.write(180); //Servo 1 go to position 170
+//  myservo2.write(160); //Servo 2 go to position 20
+//  delay(500);
+  myservo1.write(90);
   delay(1000);
 } 
